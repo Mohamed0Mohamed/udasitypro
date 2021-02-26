@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Udacity project for Weather Journal</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+  <div id="app">
+    <h1 class="holder headline">Udacity Weather Journal</h1>
+    <!--Enter Zip Code Place -->
+    <div class="holder zip">
+      <label for="zip">
+        Enter your Zipcode here
+      </label>
+      <input type="text" id="zip" placeholder="enter zip code here">
+    </div>
+    <!--what Feeling Now Space-->
+    <div class="holder feel">
+      <label for="feel">How are you feeling today?</label>
+      <textarea class="myInput" id="feel" placeholder="Enter your feeling on here" rows="8" cols="45"></textarea>
+      <button id="generate" type="submit" > Generate now </button>
+    </div>
+
+    <!--Entry to the Holder-->
+    <div class="holder entry">
+      <div class="title">Most Recent Entry</div>
+      <div id="entryHolder">
+        <div id="date"></div>
+        <div id="temp"></div>
+        <div id="content"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="app.js" type="text/javascript"></script>
+</body>
+</html>
